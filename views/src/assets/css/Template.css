@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .template-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 images in a row for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .template-container {
+      grid-template-columns: 1fr; /* 1 image per row for small screens */
+    }
+  }
+
+  

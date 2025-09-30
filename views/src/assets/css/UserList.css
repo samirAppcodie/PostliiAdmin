@@ -1,0 +1,373 @@
+/* UserList Container */
+.user-table {
+  padding: 2rem;
+  border-radius: 12px;
+  /* background: linear-gradient(to right, #1c4e91, #296eb4);  */
+  /* background: #A78BFA; */
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); */
+  /* max-width: 1800px; */
+  /* margin: 2rem auto; */
+  color: #ffffff;
+  /* height: 100vh; */
+  /* min-width: 150%; */
+}
+/* UserList.css */
+.form-select-sm {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-select-sm:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.query-textarea {
+  resize: none; /* Optional: Prevent resizing if you want to enforce the maxHeight */
+}
+/* Add Member Button Container */
+.add-member-container {
+  width: 100%;
+  /* margin-bottom: 1.5rem; */
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+/* Heading */
+h2 {
+  text-align: left;
+  /* margin-bottom: 2rem; */
+  /* color: #ffffff; */
+  color: linear-gradient(180deg, #5f7cdb, #589ebe);
+  font-size: 2rem;
+  font-weight: 500;
+  /* background-color: #27446e; */
+}
+
+/* Table Styling */
+.table {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.table th {
+  background-color: linear-gradient(180deg, #5f7cdb, #589ebe);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+.table td {
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  /* padding: 0.4rem 0.9rem; */
+  font-weight: 500;
+  /* background: #A78BFA; */
+
+}
+
+.btn-info {
+  background-color: #0dcaf0;
+  border: none;
+  color: #fff;
+}
+
+.btn-info:hover {
+  background-color: #0bb3d4;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b;
+}
+
+.btn-primary {
+  /* background-color:#0d6efd; */
+   background: linear-gradient(180deg, #5f7cdb, #589ebe);
+
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+   background: linear-gradient(180deg, #5f7cdb, #589ebe);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  color:#333;
+}
+
+.modal-content h4 {
+  margin-bottom: 1.2rem;
+  color: #0d6efd;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-content p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.modal-content img {
+  margin-top: 1rem;
+  display: block;
+  max-width: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content .btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Profile Name */
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  /* Stack table headers on small screens */
+  .table th, .table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .table th {
+    text-align: center;
+  }
+
+  .table td {
+    font-size: 13px;
+  }
+
+  .modal-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  /* Adjust add member button layout */
+  .add-member-container {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Make buttons in the modal smaller on mobile */
+  button {
+    font-size: 14px;
+  }
+}
+
+/* For very small screens (extra small phones) */
+@media (max-width: 480px) {
+  .table th, .table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  /* Adjust Add New User button on small screens */
+  .add-member-container button {
+    padding: 10px;
+  }
+}
+
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.search-input {
+  border: 2px solid #5b88e7;
+  border-radius: 6px;
+  padding: 8px 12px 8px 36px; /* Left padding for icon space */
+  font-size: 15px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(91, 136, 231, 0.5);
+  border-color: #5b88e7;
+}
+
+
+
+.user-table {
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.add-member-container {
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 40px !important;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .user-table {
+    padding: 10px;
+  }
+
+  .add-member-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .btn-sm {
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .btn-sm {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+  }
+}
