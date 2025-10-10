@@ -4,7 +4,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const VideoList = () => {
-  //test
   const [groupedVideos, setGroupedVideos] = useState({});
   const [categoryPages, setCategoryPages] = useState({});
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
